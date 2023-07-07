@@ -3,21 +3,63 @@
 <head>
   <title>Spotfluxo - Login</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    input {
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <img src="logo.png" alt="Spotfluxo Logo" class="logo">
-  </div>
+  <header class="header">
+    <div class="logo-container">
+      <img src="imagens/Spotify-Icon.png" alt="Spotfluxo Logo" class="logo">
+      <span class="logo-text">Spotfluxo</span>
+    </div>
+  </header>
+  <div class="background-rectangle"></div>
   <div class="container">
-    <h1>Login</h1>
+    <h1>Entrar no Spotfluxo</h1>
+    
+    <div class="rectangle-container">
+      <div class="rectangle">
+        <div class="rectangle-content">
+          <img src="imagens/Google-Icon.png" alt="Imagem 1" class="rectangle-image">
+          <span class="rectangle-text">Continuar Com O Google</span>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="rectangle-content">
+          <img src="imagens/Facebook-Icon.png" alt="Imagem 2" class="rectangle-image">
+          <span class="rectangle-text">Continuar Com O Facebook</span>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="rectangle-content">
+          <img src="imagens/Apple-Icon.png" alt="Imagem 3" class="rectangle-image">
+          <span class="rectangle-text">Continuar Com A Apple</span>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="rectangle-content">
+          <span class="rectangle-text">Continuar Com Um Número De Telefone</span>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="separator">
+    
     <form id="loginForm">
-      <input type="email" id="email" placeholder="E-mail">
-      <input type="password" id="password" placeholder="Senha">
-      <label>
-        <input type="checkbox" id="rememberMe"> Lembre de mim
+      <p class="login-text">E-mail ou nome de usuário</p>
+      <input type="email" id="email" placeholder="E-mail ou nome de usuário">
+      <label for="password" class="input-label">
+        <span class="password-icon"></span> Senha
       </label>
-      <button type="submit" onclick="submitForm()">Enviar</button>
-    </form>
+      <input type="password" id="password" placeholder="Senha">
+      <input type="checkbox" id="rememberMe">
+      </div>
+      <button type="submit" onclick="submitForm()">Entrar</button>
+    </form>      
   </div>
 
   <script src="script.js"></script>
